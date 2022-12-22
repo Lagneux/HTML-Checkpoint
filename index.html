@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Insertion - Métadonnées de la page -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Titre de la page -->
+        <title>Mon Portfolio - Checkpoint HTML</title>
+        
+    </head>
+    <body>
+        <!-- Entête de la page et barre de navigation -->
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a href="#resume">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+        
+            <!-- Contenu de la section #about -->
+            <section id="about">
+                
+                <div>
+                    <img src="./res/Lagnon.jpg" alt="Web Dev">
+                    <h1><u>Qui suis-je?</u></h1>
+                    <p>
+                        Je suis Lagnon, Apprenti développeur à GoMyCode. Je suis passionné d'informatique et de nouvelles technologies. Je souhaiterais maîtriser le développement Web, ainsi que la Sécurité Informatique. Le voyage débute bien déjà avec M. TOURE, mon instructeur à GoMyCode.
+                    </p>
+                </div>
+            </section>
+            <hr>
+            
+            <!-- Contenu de la section #work -->
+            <section id="work">
+                <div>
+                    <h1><u>Qu'est-ce que je fais?</u></h1>
+                    <p>
+                        Pour l'instant, je suis apprenant à GoMyCode. Mais, lorsque je ne suis pas devant mon clavier, je donne des cours. 
+                        Si vous souhaitez avoir une idée de ce qui se passe en général à GoMyCode, cliquez sur la vidéo ci-dessous:
+                    </p>
+                    <iframe width="900" height="500" src="https://www.youtube.com/embed/zcTFG_F0FRs" frameborder="0"></iframe>
+                </div>
+            </section>
+            <hr>
+
+            <!-- Contenu de la section #resume -->
+            <section id="resume">
+
+                <div>
+                    
+                    <!-- Insertion d'une liste pour les trois titres de la section #resume
+                                            I. Infos Persos
+                                            II. Parcours
+                                            III. Hobbies
+                                                                                            -->                                                                                      
+                    <ul>
+                        <h3><li type="I">Informations personnelles</li></h3>
+
+
+                        <!-- Liste descriptive (non ordonnée) de mes infos personnelles -->
+                        <ul>
+                            <li><b>Nom:</b> SORO</li>
+                            <li><b>Prénom(s):</b> Lagnon Yacouba Aristide</li>
+                            <li><b>Téléphone:</b> +225 07-57-62-61-06</li>
+                            <li><b>email:</b> sorolagnonaristide@gmail.com</li>
+                        </ul>
+                        <!-- Fin - Liste infos perso -->
+
+                        <h3><li type="I">Parcours</li></h3>
+
+                        <!-- Liste descriptive (ordonnée) de mon parcours -->
+                        <ol>
+                            <li>Certificat GoMyCode (en cours)</li>
+                            <ul>
+                                <li>Full Stack JavaScript</li>
+                            </ul>                 
+                            <li>Certificat TEFL (en cours)</li>
+                            <li>Certificat Orange Digital Center (MakeAfrica)</li>
+                        </ol>
+                        <!-- Fin - Liste parcours -->
+
+                        <h3><li type="I">Hobbies</li></h3>
+
+                        <!-- Liste descriptive (non ordonnée) de mes passe-temps -->
+                        <ul>
+                            <li>Internet</li>
+                            <li>Développement Web</li>
+                            <li>Lecture</li>
+                            <li>Sport</li>
+                        </ul>
+                        <!-- Fin - Liste Hobbies -->
+                    </ul>
+                <!-- Fin - Liste trois titres -->
+                </div>
+            </section>
+            <hr>
+
+            <!-- Contenu de la section #contact -->
+            <section id="contact">
+                <h1><u>Des suggestions?</u></h1>
+
+                <div>
+                    Pour nous contacter, renseignez le formulaire ci-dessous:
+                    <!-- Insertion d'un formulaire de contact -->
+                    <form action="">
+                        <br>
+                        <label for="fullname"><b>Nom et prénom(s):</b></label>
+                        <input type="text" name="fullname">
+                        <br>
+                        <label for="nationalite"><b>Nationalité:</b></label>
+                        <select name="nationalite" id="nationalite">
+                            <option disabled selected>Sélectionnez</option>
+                            <option value="Américaine">Américaine</option>
+                            <option value="Algérienne">Algérienne</option>
+                            <option value="Burkinabé">Burkinabé</option>
+                            <option value="Française">Française</option>
+                            <option value="Ghanéenne">Ghanéenne</option>
+                            <option value="Guinéenne">Guinéenne</option>
+                            <option value="Ivoirienne">Ivoirienne</option>
+                            <option value="Kenyane">Kenyane</option>
+                            <option value="Malienne">Malienne</option>
+                            <option value="Marocaine">Marocaine</option>
+                            <option value="Tunisienne">Tunisienne</option>
+                        </select>
+                        <br>
+                        <label for="email"><b>Email:</b></label>
+                        <input type="email" name="email">
+                        <br>
+                        <label for="phonenumber"><b>Numéro de téléphone:</b></label>
+                        <input type="number" name="phonenumber">
+                        <br>
+                        <textarea name="commentaire" id="commentaire" cols="30" rows="10" placeholder="Votre message ici!"></textarea>
+                        <input type="submit" name="submit" value="Envoyer">
+                        <input type="reset" name="reset" value="Annuler">
+                    </form>
+                    <!-- Fin - Formulaire de contact -->
+                </div>
+            </section>
+            <!-- Fin - Rédaction de toutes les sections -->
+        </main>
+
+        <!-- Insertion du pied de page -->
+        <footer>
+            Ecrit par <a href="https://github.com/Lagneux">Lagneux</a> pour <a href="https://gomycode.com/">GOMYCODE</a> - Tous droits réservés - Copyright &copy; Décembre 2022
+        </footer>
+         <!-- Fin - pied de page -->
+    </body>
+</html>
