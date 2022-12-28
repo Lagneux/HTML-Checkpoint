@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html class="main_doc">
     <head>
         <!-- Insertion - Métadonnées de la page -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <!-- Liaison du fichier CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
         <!-- Titre de la page -->
         <title>Mon Portfolio - Checkpoint HTML</title>
         
     </head>
     <body>
         <!-- Entête de la page et barre de navigation -->
-        <header>
-            <nav>
+        <header id="entete">
+            <nav class="nav_bar">
                 <ul>
                     <li>
                         <a href="#home">Home</a>
@@ -33,13 +36,13 @@
             </nav>
         </header>
 
-        <main>
+        <main id="main_content">
         
             <!-- Contenu de la section #about -->
             <section id="about">
                 
-                <div>
-                    <img src="./res/Lagnon.jpg" alt="Web Dev">
+                <div id="bio">
+                    <img src="./res/Lagnon.jpg" alt="Web Dev" class="biopic">
                     <h1><u>Qui suis-je?</u></h1>
                     <p>
                         Je suis Lagnon, Apprenti développeur à GoMyCode. Je suis passionné d'informatique et de nouvelles technologies. Je souhaiterais maîtriser le développement Web, ainsi que la Sécurité Informatique. Le voyage débute bien déjà avec M. TOURE, mon instructeur à GoMyCode.
@@ -56,7 +59,7 @@
                         Pour l'instant, je suis apprenant à GoMyCode. Mais, lorsque je ne suis pas devant mon clavier, je donne des cours. 
                         Si vous souhaitez avoir une idée de ce qui se passe en général à GoMyCode, cliquez sur la vidéo ci-dessous:
                     </p>
-                    <iframe width="900" height="500" src="https://www.youtube.com/embed/zcTFG_F0FRs" frameborder="0"></iframe>
+                    <iframe src="https://www.youtube.com/embed/zcTFG_F0FRs" frameborder="0"></iframe>
                 </div>
             </section>
             <hr>
@@ -71,6 +74,7 @@
                                             II. Parcours
                                             III. Hobbies
                                                                                             -->                                                                                      
+                    <h1><u>Envie de voir mon CV?</u>&#x1F603;</h1>
                     <ul>
                         <h3><li type="I">Informations personnelles</li></h3>
 
